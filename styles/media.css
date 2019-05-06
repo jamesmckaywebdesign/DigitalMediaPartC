@@ -1,0 +1,77 @@
+/* AUDIO */
+
+.audio-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #79FFB7;
+}
+.audio-header{
+    text-align: center;
+    padding-top: 30px;
+}
+.audio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+    .audio{
+        width: 90%;
+    }
+    .audio-header{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* WEB ANIMATION */
+
+.web-animations{
+    width: 100%;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #79FFB7;
+}
+.web-animation-item{
+    width: 100%;
+    margin: 0 auto;
+}
+.web-animation-header{
+    text-align: center;
+}
+.lemon-grow{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    transition: width 1s;
+}
+.lemon-grow:hover {
+    width: 300px;
+}
+.lemon-spin{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    transition: transform 1s ease-in-out;
+}
+.lemon-spin:hover{
+    transform: rotate(360deg);
+}
+.lemon-shrink{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    transition: width 1s;
+}
+.lemon-shrink:hover {
+    width: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+    .web-animations{
+        grid-template-columns: 1fr;
+    }
+}
